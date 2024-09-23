@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        div {
+            width: 200px;
+        height: 200px;
+        
+        border: 10px solid rgb(176, 25, 25);
+        border-top: 10px solid rgb(118, 218, 118);
+        position: relative;
+        
+        }
+        #d1 {
+            animation: move ease-in 10s infinite reverse;
+            
+        }
+        #d2 {
+            animation: move ease-in-out 10s infinite reverse;
+        }
+        #d3 {
+            animation: move ease-out 10s infinite reverse;
+        }
+        #d4 {
+            animation: move ease 10s infinite reverse;
+        }
+
+        @keyframes move {
+
+            
+        100% {
+                left: 1000px; 
+            }
+
+            from{
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(90deg);
+        }
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+</body>
+</html>
